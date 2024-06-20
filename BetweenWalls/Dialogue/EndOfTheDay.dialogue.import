@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_12"
+type="Resource"
+uid="uid://dt3i46payu34f"
+path="res://.godot/imported/EndOfTheDay.dialogue-6f65ab3341d0aeabbd2822cd0ec35833.tres"
+
+[deps]
+
+source_file="res://Dialogue/EndOfTheDay.dialogue"
+dest_files=["res://.godot/imported/EndOfTheDay.dialogue-6f65ab3341d0aeabbd2822cd0ec35833.tres"]
+
+[params]
+
+defaults=true

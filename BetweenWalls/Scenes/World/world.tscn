@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://8e4uhxax3f4u"]
+
+[ext_resource type="PackedScene" uid="uid://bjilo3fuw1y0v" path="res://Scenes/Player/player.tscn" id="1_bwt00"]
+[ext_resource type="PackedScene" uid="uid://wnc1etcvll78" path="res://Scenes/Npcs/npc.tscn" id="2_rs3sy"]
+[ext_resource type="PackedScene" uid="uid://bth3nbgiowqpj" path="res://Helpers/actionable.tscn" id="3_xmu4f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wdibt"]
+size = Vector2(76, 84)
+
+[node name="World" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(1200, 1200)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Player" parent="." instance=ExtResource("1_bwt00")]
+
+[node name="Npc" parent="." instance=ExtResource("2_rs3sy")]
+position = Vector2(537, 137)
+
+[node name="Actionable" parent="Npc" instance=ExtResource("3_xmu4f")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Npc/Actionable"]
+position = Vector2(-1, 3)
+shape = SubResource("RectangleShape2D_wdibt")

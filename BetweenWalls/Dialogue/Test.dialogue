@@ -1,0 +1,24 @@
+~ start
+
+Ava: Bonjour à toi jeune usager de la psychiatrie.
+Nathan: Bonjour jeune travailleuse, que veux-tu faire de moi ?
+- Je veux te donner ton traitement 
+	Ava: Attrape cette pillule.
+	Nathan: Mais, j'ai pas envie...
+	Ava: Je repasserai demain......
+- As-tu envie de parler ?
+	Ava: Comment ça va aujourd'hui ?
+	Nathan: Je me sens bien, j'ai réussi à dormir sans médications.
+	- Tu as arrêté de prendre ta médication ?
+		Nathan: Oui, je faisais que de dormir et mon cerveau fonctionnait au ralenti.
+	- Il faut que tu prennes ta médication maintenant, tiens là-voici.
+		Nathan: Mais j'en ai pas envie...
+		- Prends là, c'est pour ton bien
+			Nathan: Vous pouvez pas me forcer, laissez moi tranquille !
+			Ava: C'est compris, je te laisse tranquille.
+		- On en reparlera demain, prends soin de toi.
+- Start again => start
+- Je vais repasser plus tard => END
+Nathan: Bonne journée
+
+=> END
